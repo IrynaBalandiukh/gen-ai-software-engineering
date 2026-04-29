@@ -193,14 +193,14 @@ Start the server first (in a separate terminal), then run the suite:
 
 ```bash
 npm start                      # terminal 1
-bash demo/test-requests.sh     # terminal 2
+bash demo/sample-requests.sh     # terminal 2
 ```
 
 ### Windows
 
 ```bash
 npm start                      # terminal 1
-bash demo/test-requests.sh     # terminal 2 (Git Bash)
+bash demo/sample-requests.sh     # terminal 2 (Git Bash)
 ```
 
 ---
