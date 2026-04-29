@@ -30,6 +30,8 @@ How the collaboration worked in practice:
 - **API test workflow via `/api-test-coverage`** — the `demo/sample-requests.sh` test suite (54 cases) was generated using a custom Claude Code slash command (`.claude/commands/api-test-coverage.md`), which produced requests covering happy paths, validation errors, filter combinations, and not-found scenarios. The output was reviewed and gaps were filled manually.
 - **Iterative correction** — when a generated solution was close but not right (e.g. multi-currency balance shape, inclusive date filtering), targeted follow-up prompts corrected the specific issue rather than regenerating everything.
 
+Screenshots of representative prompt interactions, the running API, and test runs are in [`docs/screenshots/`](docs/screenshots/).
+
 ---
 
 ## Project Overview
