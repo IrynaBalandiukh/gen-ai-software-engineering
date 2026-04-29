@@ -2,6 +2,12 @@
 
 A REST API for financial transactions built with Node.js and Express. Uses in-memory storage with 5 seed transactions loaded on startup.
 
+| | |
+|---|---|
+| **Student** | Iryna Balandiukh |
+| **Date Submitted** | 2026-04-29 |
+| **AI Tools Used** | Claude Code (claude-sonnet-4-6) |
+
 ---
 
 ## Solution Overview
