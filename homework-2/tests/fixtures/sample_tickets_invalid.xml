@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tickets>
+  <ticket>
+    <customer_id>CUST001</customer_id>
+    <customer_email>john.smith@example.com</customer_email>
+    <subject>Cannot login to account</subject>
+    <description>I cannot access my account</description>
+  </ticket>
+  <ticket>
+    <customer_id>CUST002</customer_id>
+    <customer_email>invalid-email</customer_email>
+    <customer_name>Sarah Johnson</customer_name>
+    <subject>Payment failed</subject>
+    <description>My payment method was declined</description>
+  </ticket>
+</tickets>
