@@ -4,7 +4,7 @@ description: >-
   Turns verified research into a concrete, ordered implementation plan with
   exact before/after code per file and a test command. Supporting stage that
   feeds the Bug Fixer.
-model: claude-sonnet-4-6
+model: claude-opus-4-8
 tools: [Read, Grep, Glob, Write]
 inputs:
   - context/bugs/<BATCH>/research/verified-research.md
@@ -18,9 +18,10 @@ outputs:
 **Role:** Convert the verified findings into an unambiguous patch plan the Bug
 Fixer can apply mechanically.
 
-> Model choice — **Sonnet 4.6**: the hard reasoning (is the research correct?)
-> is already done by the Opus verifier. Planning concrete before/after edits over
-> verified facts is a routine transformation, so a balanced model suffices.
+> Model choice — **Opus 4.8**: the plan is the exact contract the Fixer applies
+> mechanically, so a wrong before/after snippet or a missed dependency propagates
+> straight into the code. The strongest model minimizes planning errors at the
+> last reasoning step before changes are made.
 
 ## Precondition
 Proceed only if `verified-research.md` is **PASS**. If it is FAIL, stop and

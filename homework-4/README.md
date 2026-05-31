@@ -53,9 +53,9 @@ Bug Researcher → Research Verifier → Bug Planner
 
 | #   | Agent                     | Role                                                                                | Input                                    | Output                               | Model                       |
 | --- | ------------------------- | ----------------------------------------------------------------------------------- | ---------------------------------------- | ------------------------------------ | --------------------------- |
-| 1   | **Bug Researcher**        | Locate each reported defect in source and quote it verbatim                         | `bug-context.md`                         | `research/codebase-research.md`      | `claude-sonnet-4-6`         |
+| 1   | **Bug Researcher**        | Locate each reported defect in source and quote it verbatim                         | `bug-context.md`                         | `research/codebase-research.md`      | `claude-opus-4-8`           |
 | 2   | **Bug Research Verifier** | Fact-check every `file:line` and snippet against live source; rate research quality | `codebase-research.md`, `bug-context.md` | `research/verified-research.md`      | `claude-opus-4-8`           |
-| 3   | **Bug Planner**           | Turn verified findings into exact before/after edits + test command                 | `verified-research.md`                   | `implementation-plan.md`             | `claude-sonnet-4-6`         |
+| 3   | **Bug Planner**           | Turn verified findings into exact before/after edits + test command                 | `verified-research.md`                   | `implementation-plan.md`             | `claude-opus-4-8`           |
 | 4   | **Bug Fixer**             | Apply the plan to `src/`, run the test suite, document the result                   | `implementation-plan.md`                 | `fix-summary.md` + edits in `src/`   | `claude-sonnet-4-6`         |
 | 5   | **Security Verifier**     | Security-review the changed code (injection, secrets, validation…); report only     | `fix-summary.md` + changed files         | `security-report.md`                 | `claude-opus-4-8`           |
 | 6   | **Unit Test Generator**   | Write & run tests for the changed code only                                         | `fix-summary.md` + changed files         | `test-report.md` + tests in `tests/` | `claude-haiku-4-5-20251001` |
@@ -93,14 +93,17 @@ applied without any manual step.
 
 Each agent declares an explicit `model:` in its frontmatter, matched to its task:
 
-- **`claude-opus-4-8` — Research Verifier & Security Verifier.** These are the
-  pipeline's quality gates. Catching a wrong line number, an unsupported claim, or
-  an injection that survives a fix rewards careful, adversarial reasoning, so the
-  strongest model is justified where everything downstream depends on the result.
-- **`claude-sonnet-4-6` — Bug Researcher, Bug Planner, Bug Fixer.** Locating
-  defects in a small codebase, transforming verified facts into a plan, and
-  applying an explicit before/after plan are precise but low-ambiguity tasks. A
-  fast, balanced model is the right cost/throughput trade-off.
+- **`claude-opus-4-8` — Bug Researcher, Research Verifier, Bug Planner, Security
+  Verifier.** These are the pipeline's reasoning-heavy stages: locating each
+  defect, fact-checking the research, turning verified findings into an exact
+  patch plan, and adversarially reviewing the changed code for security issues.
+  Every one of them feeds something that's applied or trusted downstream, so the
+  strongest model is justified — a wrong lead, an unverified claim, a faulty plan,
+  or a missed injection is expensive to recover from later.
+- **`claude-sonnet-4-6` — Bug Fixer.** Applying an explicit before/after plan and
+  running the test command is precise, low-ambiguity execution: the hard reasoning
+  was already done by the Planner. A fast, balanced model is the right
+  cost/throughput trade-off here.
 - **`claude-haiku-4-5` — Unit Test Generator.** Generating tests against an
   established framework and an explicit FIRST checklist is structured
   scaffolding; the fastest, cheapest model keeps the final stage quick while the

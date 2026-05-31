@@ -4,7 +4,7 @@ description: >-
   Investigates reported defects in the codebase and produces a research document
   pinpointing each defect's location, root cause, and fix direction. First stage
   of the 4-agent bug pipeline (supporting role).
-model: claude-sonnet-4-6
+model: claude-opus-4-8
 tools: [Read, Grep, Glob, Write]
 inputs:
   - context/bugs/<BATCH>/bug-context.md
@@ -17,9 +17,10 @@ outputs:
 **Role:** Locate and explain each reported defect in source, so the Research
 Verifier can fact-check it and the Bug Planner can plan fixes.
 
-> Model choice — **Sonnet 4.6**: code investigation is pattern matching over a
-> small codebase; a balanced, fast model is sufficient and keeps the pipeline
-> cheap. Deep reasoning is reserved for the verification stages.
+> Model choice — **Opus 4.8**: the Researcher does the pipeline's original
+> investigation — locating each defect and explaining its root cause. Strong
+> reasoning here means fewer wrong leads for the Verifier to reject, so the most
+> capable model raises the quality of everything built on top of the research.
 
 ## Inputs
 - `context/bugs/<BATCH>/bug-context.md` — the reported defects.
