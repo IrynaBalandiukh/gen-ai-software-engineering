@@ -7,7 +7,8 @@
   "scripts": {
     "start": "node src/server.js",
     "test": "jest --runInBand",
-    "pipeline": "node scripts/run-pipeline.js"
+    "pipeline": "node scripts/run-pipeline.js",
+    "pipeline:dry": "node scripts/run-pipeline.js --dry-run"
   },
   "keywords": [
     "express",
