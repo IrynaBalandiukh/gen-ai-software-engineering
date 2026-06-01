@@ -26,7 +26,7 @@ function createApp(db = createDb()) {
   app.get('/notes', (req, res) => {
     const page = parseInt(req.query.page, 10) || 1;
     const limit = parseInt(req.query.limit, 10) || 10;
-    const offset = page * limit;
+    const offset = (page - 1) * limit;
 
     const rows = db
       .prepare('SELECT * FROM notes ORDER BY id LIMIT ? OFFSET ?')
@@ -51,7 +51,7 @@ function createApp(db = createDb()) {
    */
   app.post('/notes', (req, res) => {
     const { title, body, owner } = req.body || {};
-    if (!title) {
+    if (!title || !body || !owner) {
       return res.status(400).json({ error: 'title, body and owner are required' });
     }
     const info = db
@@ -67,8 +67,8 @@ function createApp(db = createDb()) {
   app.get('/search', (req, res) => {
     const term = String(req.query.q || '');
     const rows = db
-      .prepare("SELECT * FROM notes WHERE title LIKE '%" + term + "%'")
-      .all();
+      .prepare("SELECT * FROM notes WHERE title LIKE '%' || ? || '%'")
+      .all(term);
     res.json({ q: term, notes: rows });
   });
 
