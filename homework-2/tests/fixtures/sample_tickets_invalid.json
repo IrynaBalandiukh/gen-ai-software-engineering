@@ -1,0 +1,27 @@
+[
+  {
+    "customer_id": "CUST001",
+    "customer_email": "john.smith@example.com",
+    "customer_name": "John Smith",
+    "subject": "Cannot login to account",
+    "description": "I cannot access my account after the password reset",
+    "category": "account_access",
+    "priority": "urgent"
+  },
+  {
+    "customer_id": "CUST002",
+    "customer_email": "not-a-valid-email",
+    "customer_name": "Sarah Johnson",
+    "subject": "Payment failed",
+    "description": "My payment method was declined",
+    "category": "billing_question"
+  },
+  {
+    "customer_id": "CUST003",
+    "customer_email": "mike.brown@example.com",
+    "customer_name": "Mike Brown",
+    "subject": "App crashes",
+    "description": "Too short description for testing validation",
+    "category": "invalid_category"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "customer_id": "CUST001",
+    "customer_email": "john.smith@example.com",
+    "customer_name": "John Smith",
+    "subject": "Cannot login to account",
+    "description": "I cannot access my account after the password reset",
+    "category": "account_access",
+    "priority": "urgent",
+    "status": "new",
+    "assigned_to": null,
+    "tags": ["security"]
+  },
+  {
+    "customer_id": "CUST002",
+    "customer_email": "sarah.johnson@example.com",
+    "customer_name": "Sarah Johnson",
+    "subject": "Payment failed",
+    "description": "My payment method was declined but I was still charged",
+    "category": "billing_question",
+    "priority": "high",
+    "status": "open",
+    "assigned_to": "agent1",
+    "tags": ["payment"]
+  },
+  {
+    "customer_id": "CUST003",
+    "customer_email": "mike.brown@example.com",
+    "customer_name": "Mike Brown",
+    "subject": "App crashes on startup",
+    "description": "The application crashes immediately after opening",
+    "category": "technical_issue",
+    "priority": "urgent",
+    "status": "new",
+    "assigned_to": null,
+    "tags": ["crash"]
+  },
+  {
+    "customer_id": "CUST004",
+    "customer_email": "emily.davis@example.com",
+    "customer_name": "Emily Davis",
+    "subject": "New feature request for dark mode",
+    "description": "We would like to have a dark mode option available",
+    "category": "feature_request",
+    "priority": "low",
+    "status": "open",
+    "assigned_to": "agent2",
+    "tags": ["enhancement"]
+  },
+  {
+    "customer_id": "CUST005",
+    "customer_email": "david.wilson@example.com",
+    "customer_name": "David Wilson",
+    "subject": "Steps to reproduce the bug",
+    "description": "I found a regression in version 2.5 of the software",
+    "category": "bug_report",
+    "priority": "high",
+    "status": "open",
+    "assigned_to": null,
+    "tags": ["bug"]
+  }
+]

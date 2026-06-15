@@ -1,0 +1,11 @@
+customer_id,customer_email,customer_name,subject,description,category,priority,status,assigned_to,tags
+CUST001,john.smith@example.com,John Smith,Cannot login to account,I cannot access my account after the password reset,account_access,urgent,new,,security
+CUST002,sarah.johnson@example.com,Sarah Johnson,Payment failed,My payment method was declined but I was still charged,billing_question,high,open,agent1,payment
+CUST003,mike.brown@example.com,Mike Brown,App crashes on startup,The application crashes immediately after opening,technical_issue,urgent,new,,crash
+CUST004,emily.davis@example.com,Emily Davis,New feature request,We would like to have a dark mode option,feature_request,low,open,agent2,enhancement
+CUST005,david.wilson@example.com,David Wilson,Steps to reproduce the bug,I found a regression in version 2.5 of the software,bug_report,high,open,,bug
+CUST006,jane.anderson@example.com,Jane Anderson,2FA not working,I cannot sign in because 2FA authentication is failing,account_access,urgent,new,,security
+CUST007,robert.taylor@example.com,Robert Taylor,Invoice not received,I never received the invoice for my subscription payment,billing_question,medium,open,agent1,invoice
+CUST008,lisa.martin@example.com,Lisa Martin,Slow performance,The app is running very slowly and timing out on queries,technical_issue,high,in_progress,,performance
+CUST009,james.garcia@example.com,James Garcia,Request API documentation,Could you please provide more detailed API documentation,feature_request,medium,open,,documentation
+CUST010,patricia.lee@example.com,Patricia Lee,Account locked,My account has been locked and I cannot access it,account_access,urgent,open,agent1,locked

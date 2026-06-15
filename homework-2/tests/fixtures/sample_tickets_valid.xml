@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tickets>
+  <ticket>
+    <customer_id>CUST001</customer_id>
+    <customer_email>john.smith@example.com</customer_email>
+    <customer_name>John Smith</customer_name>
+    <subject>Cannot login to account</subject>
+    <description>I cannot access my account after the password reset</description>
+    <category>account_access</category>
+    <priority>urgent</priority>
+    <status>new</status>
+    <assigned_to></assigned_to>
+    <tags>security</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST002</customer_id>
+    <customer_email>sarah.johnson@example.com</customer_email>
+    <customer_name>Sarah Johnson</customer_name>
+    <subject>Payment failed</subject>
+    <description>My payment method was declined but I was still charged</description>
+    <category>billing_question</category>
+    <priority>high</priority>
+    <status>open</status>
+    <assigned_to>agent1</assigned_to>
+    <tags>payment</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST003</customer_id>
+    <customer_email>mike.brown@example.com</customer_email>
+    <customer_name>Mike Brown</customer_name>
+    <subject>App crashes on startup</subject>
+    <description>The application crashes immediately after opening</description>
+    <category>technical_issue</category>
+    <priority>urgent</priority>
+    <status>new</status>
+    <assigned_to></assigned_to>
+    <tags>crash</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST004</customer_id>
+    <customer_email>emily.davis@example.com</customer_email>
+    <customer_name>Emily Davis</customer_name>
+    <subject>New feature request</subject>
+    <description>We would like to have a dark mode option available</description>
+    <category>feature_request</category>
+    <priority>low</priority>
+    <status>open</status>
+    <assigned_to>agent2</assigned_to>
+    <tags>enhancement</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST005</customer_id>
+    <customer_email>david.wilson@example.com</customer_email>
+    <customer_name>David Wilson</customer_name>
+    <subject>Steps to reproduce the bug</subject>
+    <description>I found a regression in version 2.5 of the software</description>
+    <category>bug_report</category>
+    <priority>high</priority>
+    <status>open</status>
+    <assigned_to></assigned_to>
+    <tags>bug</tags>
+  </ticket>
+</tickets>

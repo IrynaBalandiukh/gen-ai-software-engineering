@@ -1,0 +1,328 @@
+[
+  {
+    "customer_id": "CUST001",
+    "customer_email": "john.smith@example.com",
+    "customer_name": "John Smith",
+    "subject": "Cannot login to my account",
+    "description": "I cannot access my account after performing a password reset. The system says my credentials are invalid despite using the reset link.",
+    "category": "account_access",
+    "priority": "urgent",
+    "status": "new",
+    "assigned_to": null,
+    "tags": ["security", "account", "urgent"],
+    "metadata": {
+      "source": "web_form",
+      "browser": "Chrome",
+      "device_type": "desktop"
+    }
+  },
+  {
+    "customer_id": "CUST002",
+    "customer_email": "sarah.johnson@example.com",
+    "customer_name": "Sarah Johnson",
+    "subject": "Duplicate charge on my account",
+    "description": "My payment method was declined but I was still charged twice for the same order. This is a billing error.",
+    "category": "billing_question",
+    "priority": "high",
+    "status": "in_progress",
+    "assigned_to": "agent1",
+    "tags": ["payment", "billing", "duplicate"],
+    "metadata": {
+      "source": "email",
+      "browser": "Firefox",
+      "device_type": "mobile"
+    }
+  },
+  {
+    "customer_id": "CUST003",
+    "customer_email": "mike.brown@example.com",
+    "customer_name": "Mike Brown",
+    "subject": "Application crashes immediately on startup",
+    "description": "The application crashes immediately after opening. I receive an exception error with code 500.",
+    "category": "technical_issue",
+    "priority": "urgent",
+    "status": "new",
+    "assigned_to": null,
+    "tags": ["crash", "bug", "critical"],
+    "metadata": {
+      "source": "api",
+      "browser": "Safari",
+      "device_type": "desktop"
+    }
+  },
+  {
+    "customer_id": "CUST004",
+    "customer_email": "emily.davis@example.com",
+    "customer_name": "Emily Davis",
+    "subject": "Would like to see dark mode feature",
+    "description": "We would like to have a dark mode option available in the application settings.",
+    "category": "feature_request",
+    "priority": "low",
+    "status": "in_progress",
+    "assigned_to": "agent2",
+    "tags": ["enhancement", "ui", "dark-mode"],
+    "metadata": {
+      "source": "web_form",
+      "browser": "Chrome",
+      "device_type": "mobile"
+    }
+  },
+  {
+    "customer_id": "CUST005",
+    "customer_email": "david.wilson@example.com",
+    "customer_name": "David Wilson",
+    "subject": "Steps to reproduce the regression bug",
+    "description": "I found a regression in version 2.5. The expected behavior differs from the actual behavior.",
+    "category": "bug_report",
+    "priority": "high",
+    "status": "in_progress",
+    "assigned_to": null,
+    "tags": ["bug", "regression", "testing"],
+    "metadata": {
+      "source": "email"
+    }
+  },
+  {
+    "customer_id": "CUST006",
+    "customer_email": "jane.anderson@example.com",
+    "customer_name": "Jane Anderson",
+    "subject": "Two-factor authentication not working",
+    "description": "I cannot sign in because 2FA authentication is not functioning properly. I receive an error message.",
+    "category": "account_access",
+    "priority": "urgent",
+    "status": "new",
+    "assigned_to": null,
+    "tags": ["security", "authentication", "2fa"],
+    "metadata": {
+      "source": "web_form",
+      "browser": "Edge",
+      "device_type": "desktop"
+    }
+  },
+  {
+    "customer_id": "CUST007",
+    "customer_email": "robert.taylor@example.com",
+    "customer_name": "Robert Taylor",
+    "subject": "Missing invoice for my subscription",
+    "description": "I never received the invoice for my recent subscription payment and need it for accounting purposes.",
+    "category": "billing_question",
+    "priority": "medium",
+    "status": "in_progress",
+    "assigned_to": "agent1",
+    "tags": ["invoice", "billing", "receipt"],
+    "metadata": {
+      "source": "email"
+    }
+  },
+  {
+    "customer_id": "CUST008",
+    "customer_email": "lisa.martin@example.com",
+    "customer_name": "Lisa Martin",
+    "subject": "Application performance is slow and timing out",
+    "description": "The application is running very slowly and timing out on database queries. This is affecting user experience.",
+    "category": "technical_issue",
+    "priority": "high",
+    "status": "in_progress",
+    "assigned_to": null,
+    "tags": ["performance", "timeout", "slow"],
+    "metadata": {
+      "source": "web_form",
+      "browser": "Chrome",
+      "device_type": "desktop"
+    }
+  },
+  {
+    "customer_id": "CUST009",
+    "customer_email": "james.garcia@example.com",
+    "customer_name": "James Garcia",
+    "subject": "Need better API documentation",
+    "description": "Could you please provide more detailed and comprehensive API documentation for developers?",
+    "category": "feature_request",
+    "priority": "medium",
+    "status": "in_progress",
+    "assigned_to": null,
+    "tags": ["documentation", "api", "development"],
+    "metadata": {
+      "source": "api"
+    }
+  },
+  {
+    "customer_id": "CUST010",
+    "customer_email": "patricia.lee@example.com",
+    "customer_name": "Patricia Lee",
+    "subject": "My account has been locked",
+    "description": "My account has been locked and I cannot access it. I need immediate assistance to unlock it.",
+    "category": "account_access",
+    "priority": "urgent",
+    "status": "in_progress",
+    "assigned_to": "agent1",
+    "tags": ["security", "locked", "access"],
+    "metadata": {
+      "source": "web_form",
+      "browser": "Chrome",
+      "device_type": "mobile"
+    }
+  },
+  {
+    "customer_id": "CUST011",
+    "customer_email": "christopher.white@example.com",
+    "customer_name": "Christopher White",
+    "subject": "I would like to request a refund",
+    "description": "I would like to request a refund for my last purchase due to dissatisfaction.",
+    "category": "billing_question",
+    "priority": "medium",
+    "status": "in_progress",
+    "assigned_to": "agent3",
+    "tags": ["refund", "payment", "billing"],
+    "metadata": {
+      "source": "email"
+    }
+  },
+  {
+    "customer_id": "CUST012",
+    "customer_email": "mary.harris@example.com",
+    "customer_name": "Mary Harris",
+    "subject": "Error occurred during checkout process",
+    "description": "I get an exception error when trying to complete my purchase at checkout.",
+    "category": "technical_issue",
+    "priority": "high",
+    "status": "new",
+    "assigned_to": null,
+    "tags": ["error", "checkout", "payment"],
+    "metadata": {
+      "source": "web_form",
+      "browser": "Firefox",
+      "device_type": "desktop"
+    }
+  },
+  {
+    "customer_id": "CUST013",
+    "customer_email": "daniel.moore@example.com",
+    "customer_name": "Daniel Moore",
+    "subject": "Feature suggestion for export functionality",
+    "description": "I wish there was a way to export data to CSV format for better integration.",
+    "category": "feature_request",
+    "priority": "low",
+    "status": "waiting_customer",
+    "assigned_to": null,
+    "tags": ["export", "csv", "feature"],
+    "metadata": {
+      "source": "web_form",
+      "browser": "Chrome",
+      "device_type": "desktop"
+    }
+  },
+  {
+    "customer_id": "CUST014",
+    "customer_email": "barbara.jackson@example.com",
+    "customer_name": "Barbara Jackson",
+    "subject": "Cannot sign in with my credentials",
+    "description": "I cannot sign in despite entering the correct credentials multiple times.",
+    "category": "account_access",
+    "priority": "high",
+    "status": "new",
+    "assigned_to": null,
+    "tags": ["login", "access", "signin"],
+    "metadata": {
+      "source": "web_form",
+      "browser": "Safari",
+      "device_type": "mobile"
+    }
+  },
+  {
+    "customer_id": "CUST015",
+    "customer_email": "matthew.white@example.com",
+    "customer_name": "Matthew White",
+    "subject": "Subscription billing amount is incorrect",
+    "description": "The billing amount is not matching what was quoted during the purchase process.",
+    "category": "billing_question",
+    "priority": "high",
+    "status": "in_progress",
+    "assigned_to": "agent2",
+    "tags": ["billing", "subscription", "pricing"],
+    "metadata": {
+      "source": "email"
+    }
+  },
+  {
+    "customer_id": "CUST016",
+    "customer_email": "sandra.harris@example.com",
+    "customer_name": "Sandra Harris",
+    "subject": "Application is completely broken",
+    "description": "The application is broken and not working at all. This is critical and blocking production.",
+    "category": "technical_issue",
+    "priority": "urgent",
+    "status": "in_progress",
+    "assigned_to": null,
+    "tags": ["critical", "broken", "production"],
+    "metadata": {
+      "source": "web_form",
+      "browser": "Chrome",
+      "device_type": "desktop"
+    }
+  },
+  {
+    "customer_id": "CUST017",
+    "customer_email": "joseph.clark@example.com",
+    "customer_name": "Joseph Clark",
+    "subject": "Enhancement suggestion for search",
+    "description": "We would like to suggest an enhancement to the search functionality for better results.",
+    "category": "feature_request",
+    "priority": "low",
+    "status": "in_progress",
+    "assigned_to": null,
+    "tags": ["enhancement", "search", "improvement"],
+    "metadata": {
+      "source": "web_form",
+      "browser": "Chrome",
+      "device_type": "desktop"
+    }
+  },
+  {
+    "customer_id": "CUST018",
+    "customer_email": "nancy.lewis@example.com",
+    "customer_name": "Nancy Lewis",
+    "subject": "Password reset link is not working",
+    "description": "I cannot reset my password. The reset link does not work properly.",
+    "category": "account_access",
+    "priority": "high",
+    "status": "new",
+    "assigned_to": "agent3",
+    "tags": ["password", "reset", "account"],
+    "metadata": {
+      "source": "email"
+    }
+  },
+  {
+    "customer_id": "CUST019",
+    "customer_email": "charles.walker@example.com",
+    "customer_name": "Charles Walker",
+    "subject": "Discount was not applied to invoice",
+    "description": "Why wasn't the discount code applied to my invoice during checkout?",
+    "category": "billing_question",
+    "priority": "medium",
+    "status": "in_progress",
+    "assigned_to": null,
+    "tags": ["billing", "discount", "pricing"],
+    "metadata": {
+      "source": "web_form",
+      "browser": "Firefox",
+      "device_type": "mobile"
+    }
+  },
+  {
+    "customer_id": "CUST020",
+    "customer_email": "karen.hall@example.com",
+    "customer_name": "Karen Hall",
+    "subject": "Defect in version 2.1 cannot be reproduced",
+    "description": "I cannot reproduce the defect you mentioned in the bug report for version 2.1.",
+    "category": "bug_report",
+    "priority": "medium",
+    "status": "in_progress",
+    "assigned_to": null,
+    "tags": ["bug", "version", "testing"],
+    "metadata": {
+      "source": "email"
+    }
+  }
+]

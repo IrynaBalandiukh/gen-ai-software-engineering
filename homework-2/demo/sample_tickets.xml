@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tickets>
+  <ticket>
+    <customer_id>CUST001</customer_id>
+    <customer_email>john.smith@example.com</customer_email>
+    <customer_name>John Smith</customer_name>
+    <subject>Cannot login to account</subject>
+    <description>I cannot access my account after password reset. The system says my credentials are invalid.</description>
+    <category>account_access</category>
+    <priority>urgent</priority>
+    <status>new</status>
+    <assigned_to></assigned_to>
+    <tags>security,account</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST002</customer_id>
+    <customer_email>sarah.johnson@example.com</customer_email>
+    <customer_name>Sarah Johnson</customer_name>
+    <subject>Payment failed</subject>
+    <description>My payment was declined but I was still charged twice.</description>
+    <category>billing_question</category>
+    <priority>high</priority>
+    <status>in_progress</status>
+    <assigned_to>agent1</assigned_to>
+    <tags>payment,billing</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST003</customer_id>
+    <customer_email>mike.brown@example.com</customer_email>
+    <customer_name>Mike Brown</customer_name>
+    <subject>App crashes on startup</subject>
+    <description>The application crashes immediately after opening with error code 500.</description>
+    <category>technical_issue</category>
+    <priority>urgent</priority>
+    <status>new</status>
+    <assigned_to></assigned_to>
+    <tags>crash,bug</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST004</customer_id>
+    <customer_email>emily.davis@example.com</customer_email>
+    <customer_name>Emily Davis</customer_name>
+    <subject>New feature request</subject>
+    <description>Would like to have a dark mode option in the settings.</description>
+    <category>feature_request</category>
+    <priority>low</priority>
+    <status>in_progress</status>
+    <assigned_to>agent2</assigned_to>
+    <tags>enhancement,ui</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST005</customer_id>
+    <customer_email>david.wilson@example.com</customer_email>
+    <customer_name>David Wilson</customer_name>
+    <subject>Steps to reproduce the bug</subject>
+    <description>Found a regression in version 2.5. Expected behavior differs from actual.</description>
+    <category>bug_report</category>
+    <priority>high</priority>
+    <status>in_progress</status>
+    <assigned_to></assigned_to>
+    <tags>bug,regression</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST006</customer_id>
+    <customer_email>jane.anderson@example.com</customer_email>
+    <customer_name>Jane Anderson</customer_name>
+    <subject>2FA not working</subject>
+    <description>Cannot sign in because 2FA authentication is failing.</description>
+    <category>account_access</category>
+    <priority>urgent</priority>
+    <status>new</status>
+    <assigned_to></assigned_to>
+    <tags>security,authentication</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST007</customer_id>
+    <customer_email>robert.taylor@example.com</customer_email>
+    <customer_name>Robert Taylor</customer_name>
+    <subject>Invoice not received</subject>
+    <description>Never received the invoice for my subscription payment.</description>
+    <category>billing_question</category>
+    <priority>medium</priority>
+    <status>in_progress</status>
+    <assigned_to>agent1</assigned_to>
+    <tags>invoice,billing</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST008</customer_id>
+    <customer_email>lisa.martin@example.com</customer_email>
+    <customer_name>Lisa Martin</customer_name>
+    <subject>Slow performance</subject>
+    <description>The app is running very slowly and timing out on queries.</description>
+    <category>technical_issue</category>
+    <priority>high</priority>
+    <status>in_progress</status>
+    <assigned_to></assigned_to>
+    <tags>performance,timeout</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST009</customer_id>
+    <customer_email>james.garcia@example.com</customer_email>
+    <customer_name>James Garcia</customer_name>
+    <subject>Request API documentation</subject>
+    <description>Please provide more detailed API documentation.</description>
+    <category>feature_request</category>
+    <priority>medium</priority>
+    <status>in_progress</status>
+    <assigned_to></assigned_to>
+    <tags>documentation,api</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST010</customer_id>
+    <customer_email>patricia.lee@example.com</customer_email>
+    <customer_name>Patricia Lee</customer_name>
+    <subject>Account locked</subject>
+    <description>My account has been locked and I cannot access it.</description>
+    <category>account_access</category>
+    <priority>urgent</priority>
+    <status>in_progress</status>
+    <assigned_to>agent1</assigned_to>
+    <tags>security,locked</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST011</customer_id>
+    <customer_email>christopher.white@example.com</customer_email>
+    <customer_name>Christopher White</customer_name>
+    <subject>Refund request</subject>
+    <description>I would like to request a refund for my last purchase.</description>
+    <category>billing_question</category>
+    <priority>medium</priority>
+    <status>in_progress</status>
+    <assigned_to>agent3</assigned_to>
+    <tags>refund,payment</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST012</customer_id>
+    <customer_email>mary.harris@example.com</customer_email>
+    <customer_name>Mary Harris</customer_name>
+    <subject>Error on checkout</subject>
+    <description>Get an exception error when trying to complete purchase.</description>
+    <category>technical_issue</category>
+    <priority>high</priority>
+    <status>new</status>
+    <assigned_to></assigned_to>
+    <tags>error,checkout</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST013</customer_id>
+    <customer_email>daniel.moore@example.com</customer_email>
+    <customer_name>Daniel Moore</customer_name>
+    <subject>Wish for new feature</subject>
+    <description>Would like export data to CSV format option.</description>
+    <category>feature_request</category>
+    <priority>low</priority>
+    <status>waiting_customer</status>
+    <assigned_to></assigned_to>
+    <tags>export,csv</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST014</customer_id>
+    <customer_email>barbara.jackson@example.com</customer_email>
+    <customer_name>Barbara Jackson</customer_name>
+    <subject>Login issues</subject>
+    <description>Cannot sign in despite entering correct credentials.</description>
+    <category>account_access</category>
+    <priority>high</priority>
+    <status>new</status>
+    <assigned_to></assigned_to>
+    <tags>login,access</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST015</customer_id>
+    <customer_email>matthew.white@example.com</customer_email>
+    <customer_name>Matthew White</customer_name>
+    <subject>Subscription charge incorrect</subject>
+    <description>The billing amount is not matching what was quoted.</description>
+    <category>billing_question</category>
+    <priority>high</priority>
+    <status>in_progress</status>
+    <assigned_to>agent2</assigned_to>
+    <tags>billing,subscription</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST016</customer_id>
+    <customer_email>sandra.harris@example.com</customer_email>
+    <customer_name>Sandra Harris</customer_name>
+    <subject>Application broken</subject>
+    <description>The application is completely broken and not working at all.</description>
+    <category>technical_issue</category>
+    <priority>urgent</priority>
+    <status>in_progress</status>
+    <assigned_to></assigned_to>
+    <tags>critical,broken</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST017</customer_id>
+    <customer_email>joseph.clark@example.com</customer_email>
+    <customer_name>Joseph Clark</customer_name>
+    <subject>Feature enhancement</subject>
+    <description>Would like to suggest an enhancement to the search functionality.</description>
+    <category>feature_request</category>
+    <priority>low</priority>
+    <status>in_progress</status>
+    <assigned_to></assigned_to>
+    <tags>enhancement,search</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST018</customer_id>
+    <customer_email>nancy.lewis@example.com</customer_email>
+    <customer_name>Nancy Lewis</customer_name>
+    <subject>Password reset failed</subject>
+    <description>Cannot reset password. The reset link is not working properly.</description>
+    <category>account_access</category>
+    <priority>high</priority>
+    <status>new</status>
+    <assigned_to>agent3</assigned_to>
+    <tags>password,reset</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST019</customer_id>
+    <customer_email>charles.walker@example.com</customer_email>
+    <customer_name>Charles Walker</customer_name>
+    <subject>Charge not applied</subject>
+    <description>Why wasn't the discount applied to my invoice?</description>
+    <category>billing_question</category>
+    <priority>medium</priority>
+    <status>in_progress</status>
+    <assigned_to></assigned_to>
+    <tags>billing,discount</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST020</customer_id>
+    <customer_email>karen.hall@example.com</customer_email>
+    <customer_name>Karen Hall</customer_name>
+    <subject>Cannot reproduce error</subject>
+    <description>Cannot reproduce the error mentioned in the bug report.</description>
+    <category>bug_report</category>
+    <priority>medium</priority>
+    <status>in_progress</status>
+    <assigned_to></assigned_to>
+    <tags>bug,debugging</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST021</customer_id>
+    <customer_email>ryan.allen@example.com</customer_email>
+    <customer_name>Ryan Allen</customer_name>
+    <subject>Access denied error</subject>
+    <description>Get access denied error when trying to view dashboard.</description>
+    <category>account_access</category>
+    <priority>high</priority>
+    <status>new</status>
+    <assigned_to></assigned_to>
+    <tags>access,permission</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST022</customer_id>
+    <customer_email>donna.young@example.com</customer_email>
+    <customer_name>Donna Young</customer_name>
+    <subject>Receipt missing</subject>
+    <description>Never received a receipt for my purchase.</description>
+    <category>billing_question</category>
+    <priority>medium</priority>
+    <status>in_progress</status>
+    <assigned_to>agent1</assigned_to>
+    <tags>receipt,invoice</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST023</customer_id>
+    <customer_email>gary.king@example.com</customer_email>
+    <customer_name>Gary King</customer_name>
+    <subject>Performance issue</subject>
+    <description>The system is performing very slowly today.</description>
+    <category>technical_issue</category>
+    <priority>medium</priority>
+    <status>in_progress</status>
+    <assigned_to></assigned_to>
+    <tags>performance,slow</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST024</customer_id>
+    <customer_email>susan.wright@example.com</customer_email>
+    <customer_name>Susan Wright</customer_name>
+    <subject>Add new export option</subject>
+    <description>Could we add support for exporting to PDF format?</description>
+    <category>feature_request</category>
+    <priority>low</priority>
+    <status>waiting_customer</status>
+    <assigned_to></assigned_to>
+    <tags>export,pdf</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST025</customer_id>
+    <customer_email>steven.lopez@example.com</customer_email>
+    <customer_name>Steven Lopez</customer_name>
+    <subject>Steps to reproduce crash</subject>
+    <description>Steps to reproduce: 1) Open app 2) Click settings 3) App crashes.</description>
+    <category>bug_report</category>
+    <priority>high</priority>
+    <status>new</status>
+    <assigned_to></assigned_to>
+    <tags>crash,steps</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST026</customer_id>
+    <customer_email>ashley.hill@example.com</customer_email>
+    <customer_name>Ashley Hill</customer_name>
+    <subject>Sign out not working</subject>
+    <description>The sign out button does not work properly.</description>
+    <category>account_access</category>
+    <priority>medium</priority>
+    <status>new</status>
+    <assigned_to></assigned_to>
+    <tags>logout,sign-out</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST027</customer_id>
+    <customer_email>paul.scott@example.com</customer_email>
+    <customer_name>Paul Scott</customer_name>
+    <subject>Cost calculation error</subject>
+    <description>The pricing calculation appears to be incorrect.</description>
+    <category>billing_question</category>
+    <priority>high</priority>
+    <status>in_progress</status>
+    <assigned_to>agent2</assigned_to>
+    <tags>billing,pricing</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST028</customer_id>
+    <customer_email>kimberly.green@example.com</customer_email>
+    <customer_name>Kimberly Green</customer_name>
+    <subject>Network timeout</subject>
+    <description>The server timeout is too short and causes failures.</description>
+    <category>technical_issue</category>
+    <priority>high</priority>
+    <status>in_progress</status>
+    <assigned_to></assigned_to>
+    <tags>timeout,network</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST029</customer_id>
+    <customer_email>mark.adams@example.com</customer_email>
+    <customer_name>Mark Adams</customer_name>
+    <subject>Suggest improvements</subject>
+    <description>I have several suggestions for improving the user experience.</description>
+    <category>feature_request</category>
+    <priority>low</priority>
+    <status>in_progress</status>
+    <assigned_to></assigned_to>
+    <tags>improvement,ux</tags>
+  </ticket>
+  <ticket>
+    <customer_id>CUST030</customer_id>
+    <customer_email>betty.nelson@example.com</customer_email>
+    <customer_name>Betty Nelson</customer_name>
+    <subject>Security concern</subject>
+    <description>I have a security concern about data encryption implementation.</description>
+    <category>account_access</category>
+    <priority>urgent</priority>
+    <status>new</status>
+    <assigned_to>agent3</assigned_to>
+    <tags>security,encryption</tags>
+  </ticket>
+</tickets>

@@ -1,0 +1,6 @@
+customer_id,customer_email,customer_name,subject,description,category,priority,status,assigned_to,tags
+CUST001,john.smith@example.com,John Smith,Cannot login,I cannot access my account,account_access,urgent,new,,security
+CUST002,not-an-email,Sarah Johnson,Payment failed,My payment method was declined but I was still charged,billing_question,high,open,,payment
+CUST003,mike.brown@example.com,Mike Brown,,The application crashes immediately after opening,technical_issue,urgent,new,,crash
+CUST004,emily.davis@example.com,Emily Davis,New feature,We would like,feature_request,low,open,,enhancement
+CUST005,david.wilson@example.com,David Wilson,Bug report,Steps to reproduce the bug,invalid_category,high,open,,bug
