@@ -1,0 +1,38 @@
+{
+  "mcpServers": {
+    "github": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_TOKEN": "<your-github-personal-access-token>"
+      }
+    },
+    "filesystem": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:\\Users\\Iryna\\Projects\\AI-course\\gen-ai-software-engineering"
+      ]
+    },
+    "jira": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["mcp-atlassian"],
+      "env": {
+        "JIRA_URL": "https://balandiukh-test.atlassian.net",
+        "JIRA_USERNAME": "balandiukh.i@gmail.com",
+        "JIRA_API_TOKEN": "<your-jira-api-token>"
+      }
+    },
+    "custom-mcp": {
+      "type": "stdio",
+      "command": "python",
+      "args": [
+        "C:\\Users\\Iryna\\Projects\\AI-course\\gen-ai-software-engineering\\homework-5\\custom-mcp-server\\server.py"
+      ]
+    }
+  }
+}
