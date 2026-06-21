@@ -101,8 +101,7 @@ export async function runPipeline(baseDir: string = ROOT): Promise<Summary> {
       msg = agent(msg);
     }
 
-    // processing -> output -> results
-    await writeFile(join(DIRS.output, file), JSON.stringify(msg, null, 2));
+    // processing -> results
     await rm(join(DIRS.processing, file), { force: true });
     await writeFile(join(DIRS.results, file), JSON.stringify(msg, null, 2));
 
