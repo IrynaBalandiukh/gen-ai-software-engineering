@@ -1,0 +1,32 @@
+{
+  "message_id": "195f6835-ba61-4c89-b049-e4c0967bb9ac",
+  "timestamp": "2026-06-21T13:37:24.036Z",
+  "source_agent": "settlement_processor",
+  "target_agent": "none",
+  "message_type": "transaction",
+  "data": {
+    "transaction_id": "TXN007",
+    "timestamp": "2026-03-16T10:10:00Z",
+    "source_account": "ACC-1007",
+    "destination_account": "ACC-8800",
+    "amount": "-100.00",
+    "currency": "GBP",
+    "transaction_type": "refund",
+    "description": "Refund for order #8821",
+    "metadata": {
+      "channel": "online",
+      "country": "GB"
+    },
+    "status": "settled",
+    "risk_score": 1,
+    "risk_signals": [
+      "cross_border"
+    ],
+    "fraud_flagged": false,
+    "requiresRegulatoryReport": false,
+    "compliance_notes": [
+      "cross-border (GB)"
+    ],
+    "settled_amount": "-100.00"
+  }
+}

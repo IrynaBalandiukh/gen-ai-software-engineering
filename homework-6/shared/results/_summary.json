@@ -1,0 +1,9 @@
+{
+  "total_processed": 8,
+  "accepted": 7,
+  "rejected": 1,
+  "flagged_for_fraud": 2,
+  "rejection_reasons": [
+    "TXN006: invalid currency code (not ISO 4217): XYZ"
+  ]
+}
