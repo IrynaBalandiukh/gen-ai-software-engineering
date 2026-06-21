@@ -1,0 +1,23 @@
+#!/usr/bin/env sh
+# Coverage gate (Task 3) — blocks `git push` if test coverage < 80%.
+# The 80% threshold is enforced by Vitest (see vitest.config.ts); this hook just
+# runs the coverage report and lets a non-zero exit code abort the push.
+#
+# This project lives in a subfolder of the git repo, so cd into the project root
+# (the parent of this .husky/ dir) before running npm. Wired via:
+#   git config core.hooksPath homework-6/.husky
+
+cd "$(dirname "$0")/.." || exit 1
+
+echo "[pre-push] Coverage gate: running 'npm run coverage' (hard gate 80%)..."
+npm run coverage
+status=$?
+
+if [ "$status" -ne 0 ]; then
+  echo ""
+  echo "❌ [pre-push] Coverage below 80% (or tests failed). Push blocked."
+  echo "   Run 'npm run coverage' to see the report and raise coverage to >= 80%."
+  exit 1
+fi
+
+echo "✅ [pre-push] Coverage gate passed (>= 80%)."
