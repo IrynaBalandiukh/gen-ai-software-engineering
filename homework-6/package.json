@@ -1,0 +1,29 @@
+{
+  "name": "multi-agent-banking-pipeline",
+  "version": "1.0.0",
+  "description": "AI-powered multi-agent banking transaction processing pipeline",
+  "type": "module",
+  "author": "Iryna Balandiukh",
+  "license": "MIT",
+  "scripts": {
+    "pipeline": "tsx main.ts",
+    "validate": "tsx agents/transactionValidator.ts --dry-run",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "coverage": "vitest run --coverage",
+    "mcp": "tsx mcp/server.ts",
+    "prepare": "git config core.hooksPath homework-6/.husky || true"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "decimal.js": "^10.6.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^2.1.9",
+    "husky": "^9.1.7",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^2.1.9"
+  }
+}
