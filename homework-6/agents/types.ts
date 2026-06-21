@@ -18,7 +18,7 @@ export interface Transaction {
 }
 
 /** Final/intermediate decision status carried through the pipeline. */
-export type Status = "validated" | "rejected" | "accepted" | "settled";
+export type Status = "pending" | "validated" | "rejected" | "accepted" | "settled";
 
 /**
  * The transaction data plus the decision fields each agent accumulates as the

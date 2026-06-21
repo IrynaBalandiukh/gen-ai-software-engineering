@@ -64,7 +64,7 @@ export async function runPipeline(baseDir: string = ROOT): Promise<Summary> {
       source_agent: "integrator",
       target_agent: "transaction_validator",
       message_type: "transaction",
-      data: { ...txn, status: "validated" },
+      data: { ...txn, status: "pending" },
     };
   }
 

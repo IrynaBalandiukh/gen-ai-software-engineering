@@ -9,9 +9,13 @@ import { type Message, nextAgent } from "./types.ts";
 const AGENT_NAME = "transaction_validator";
 
 // A pragmatic subset of ISO 4217 codes sufficient for the sample data and tests.
+// IRR/KPW/SYP are valid ISO 4217 codes subject to compliance restrictions —
+// they must pass validation so the Compliance Checker can apply its restricted-
+// currency scrutiny (rather than being silently blocked before reaching it).
 const VALID_CURRENCIES = new Set([
   "USD", "EUR", "GBP", "JPY", "CHF", "CAD", "AUD", "NZD",
   "CNY", "HKD", "SGD", "SEK", "NOK", "DKK", "PLN", "ZAR",
+  "IRR", "KPW", "SYP",
 ]);
 
 const REQUIRED_FIELDS: Array<keyof Message["data"]> = [
